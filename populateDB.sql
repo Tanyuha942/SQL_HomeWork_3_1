@@ -1,124 +1,99 @@
 --======================================================================================================--
-insert into gender(gender)
-values('РјСѓР¶С‡РёРЅР°');
-insert into gender(gender)
-values('Р¶РµРЅС‰РёРЅР°');
+insert into projects (project_name, created)
+values ('Проект1', to_date('07.02.2020', 'dd.mm.yyyy hh24:mi:ss'));
+insert into projects (project_name, created)
+values ('Проект2', to_date('10.08.2019', 'dd.mm.yyyy hh24:mi:ss'));
+insert into projects (project_name, created)
+values ('Проект3', to_date('05.05.2021', 'dd.mm.yyyy hh24:mi:ss'));
+insert into projects (project_name, created)
+values ('Проект4', to_date('19.03.2020', 'dd.mm.yyyy hh24:mi:ss'));
+insert into projects (project_name, created)
+values ('Проект5', to_date('25.10.2021', 'dd.mm.yyyy hh24:mi:ss'));
 --======================================================================================================--
-insert into projects (projectname, created)
-values ('РџСЂРѕРµРєС‚1', to_date('07.02.2020', 'dd.mm.yyyy hh24:mi:ss'));
-insert into projects (projectname, created)
-values ('РџСЂРѕРµРєС‚2', to_date('10.08.2019', 'dd.mm.yyyy hh24:mi:ss'));
-insert into projects (projectname, created)
-values ('РџСЂРѕРµРєС‚3', to_date('05.05.2021', 'dd.mm.yyyy hh24:mi:ss'));
-insert into projects (projectname, created)
-values ('РџСЂРѕРµРєС‚4', to_date('19.03.2020', 'dd.mm.yyyy hh24:mi:ss'));
-insert into projects (projectname, created)
-values ('РџСЂРѕРµРєС‚5', to_date('25.10.2021', 'dd.mm.yyyy hh24:mi:ss'));
---======================================================================================================--
-insert into companies (companyname)
-values ('РљРѕРјРїР°РЅРёСЏ1');
-insert into companies (companyname)
-values ('РљРѕРјРїР°РЅРёСЏ2');
-insert into companies (companyname)
-values ('РљРѕРјРїР°РЅРёСЏ3');
-insert into companies (companyname)
-values ('РљРѕРјРїР°РЅРёСЏ4');
+insert into companies (company_name)
+values ('Компания1');
+insert into companies (company_name)
+values ('Компания2');
+insert into companies (company_name)
+values ('Компания3');
+insert into companies (company_name)
+values ('Компания4');
 --======================================================================================================
-insert into customers (customername)
-values ('Р—Р°РєР°Р·С‡РёРє1');
-insert into customers (customername)
-values ('Р—Р°РєР°Р·С‡РёРє2');
-insert into customers (customername)
-values ('Р—Р°РєР°Р·С‡РёРє3');
-insert into customers (customername)
-values ('Р—Р°РєР°Р·С‡РёРє4');
+insert into customers (customer_name)
+values ('Заказчик1');
+insert into customers (customer_name)
+values ('Заказчик2');
+insert into customers (customer_name)
+values ('Заказчик3');
+insert into customers (customer_name)
+values ('Заказчик4');
 --======================================================================================================--
-insert into industry (industryname)
-values ('Java');
-insert into industry (industryname)
-values ('C++');
-insert into industry (industryname)
-values ('C#');
-insert into industry (industryname)
-values ('JS');
---======================================================================================================--
-insert into skill_level (levelname)
-values('Junior');
-insert into skill_level (levelname)
-values('Middle');
-insert into skill_level (levelname)
-values('Senior');
---======================================================================================================--
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('РЎРёРґРѕСЂРѕРІ', 'Р’Р°Р»РµРЅС‚РёРЅ', 'РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕРІРёС‡', 27, to_date('21.02.1994', 'dd.mm.yyyy hh24:mi:ss'), 1, 1);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('РџРµС‚СЂРѕРІ', 'Р“СЂРёРіРѕСЂРёР№', 'РђРЅС‚РѕРЅРѕРІРёС‡', 40, to_date('12.11.1981', 'dd.mm.yyyy hh24:mi:ss'), 1, 1);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('РЎР°РјРѕР№Р»РѕРІ', 'Р’Р°Р»РµРЅС‚РёРЅ', 'РџРµС‚СЂРѕРІРёС‡', 30, to_date('05.07.1991', 'dd.mm.yyyy hh24:mi:ss'), 1, 1);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р’Р°СЃРёР»СЊРµРІ', 'РђРЅР°С‚РѕР»РёР№', 'РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕРІРёС‡', 35, to_date('02.01.1986', 'dd.mm.yyyy hh24:mi:ss'), 1, 1);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('РњР°СЃР»РѕРІР°', 'Р•Р»РµРЅР°', 'РђР»РµРєСЃР°РЅРґСЂРѕРІРЅР°', 29, to_date('12.11.1981', 'dd.mm.yyyy hh24:mi:ss'), 2, 1);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Сидоров', 'Валентин', 'Константинович', 27, to_date('21.02.1994', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 1);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Петров', 'Григорий', 'Антонович', 40, to_date('12.11.1981', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 1);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Самойлов', 'Валентин', 'Петрович', 30, to_date('05.07.1991', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 1);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Васильев', 'Анатолий', 'Константинович', 35, to_date('02.01.1986', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 1);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Маслова', 'Елена', 'Александровна', 29, to_date('12.11.1981', 'dd.mm.yyyy hh24:mi:ss'), 'женщина', 1);
 ------------------------------------------------------------------------------------------------------------
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє6', '', '', 27, to_date('12.11.1994', 'dd.mm.yyyy hh24:mi:ss'), 1, 2);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє7', '', '', 40, to_date('30.12.1981', 'dd.mm.yyyy hh24:mi:ss'), 1, 2);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє8', '', '', 30, to_date('11.03.1991', 'dd.mm.yyyy hh24:mi:ss'), 1, 2);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє9', '', '', 35, to_date('22.09.1986', 'dd.mm.yyyy hh24:mi:ss'), 1, 2);
-insert into developers(lastname, firstname, surname, developerage, dateofbirth, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє10', '', '', 29, to_date('14.06.1981', 'dd.mm.yyyy hh24:mi:ss'), 2, 3);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Разработчик6', '', '', 27, to_date('12.11.1994', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 2);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Разработчик7', '', '', 40, to_date('30.12.1981', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 2);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Разработчик8', '', '', 30, to_date('11.03.1991', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 2);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Разработчик9', '', '', 35, to_date('22.09.1986', 'dd.mm.yyyy hh24:mi:ss'), 'мужчина', 2);
+insert into developers(last_name, first_name, surname, developer_age, date_of_birth, gender, company_id)
+values('Разработчик10', '', '', 29, to_date('14.06.1981', 'dd.mm.yyyy hh24:mi:ss'), 'женщина', 3);
 ------------------------------------------------------------------------------------------------------------
-insert into developers(lastname, firstname, surname, developerage, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє11', '', '', 29, 1, 3);
-insert into developers(lastname, firstname, surname, developerage, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє12', '', '', 31, 1, 3);
-insert into developers(lastname, firstname, surname, developerage, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє13', '', '', 31, 1, 3);
-insert into developers(lastname, firstname, surname, developerage, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє14', '', '', 26, 1, 3);
-insert into developers(lastname, firstname, surname, developerage, gender_id, company_id)
-values('Р Р°Р·СЂР°Р±РѕС‚С‡РёРє15', '', '', 38, 1, 3);
+insert into developers(last_name, first_name, surname, developer_age, gender, company_id)
+values('Разработчик11', '', '', 29, 'мужчина', 3);
+insert into developers(last_name, first_name, surname, developer_age, gender, company_id)
+values('Разработчик12', '', '', 31, 'мужчина', 3);
+insert into developers(last_name, first_name, surname, developer_age, gender, company_id)
+values('Разработчик13', '', '', 31, 'мужчина', 3);
+insert into developers(last_name, first_name, surname, developer_age, gender, company_id)
+values('Разработчик14', '', '', 26, 'мужчина', 3);
+insert into developers(last_name, first_name, surname, developer_age, gender, company_id)
+values('Разработчик15', '', '', 38, 'мужчина', 3);
 --======================================================================================================--
-insert into skills(industry_id, levelskills_id)
-values(1, 1);
-insert into skills(industry_id, levelskills_id)
-values(1, 2);
-insert into skills(industry_id, levelskills_id)
-values(1, 3);
-insert into skills(industry_id, levelskills_id)
-values(2, 1);
-insert into skills(industry_id, levelskills_id)
-values(2, 2);
-insert into skills(industry_id, levelskills_id)
-values(2, 3);
-insert into skills(industry_id, levelskills_id)
-values(3, 1);
-insert into skills(industry_id, levelskills_id)
-values(3, 2);
-insert into skills(industry_id, levelskills_id)
-values(3, 3);
-insert into skills(industry_id, levelskills_id)
-values(4, 1);
-insert into skills(industry_id, levelskills_id)
-values(4, 2);
-insert into skills(industry_id, levelskills_id)
-values(4, 3);
+insert into skills(industry, level_skills)
+values('Java', 'Junior');
+insert into skills(industry, level_skills)
+values('Java', 'Middle');
+insert into skills(industry, level_skills)
+values('Java', 'Senior');
+insert into skills(industry, level_skills)
+values('C++', 'Junior');
+insert into skills(industry, level_skills)
+values('C++', 'Middle');
+insert into skills(industry, level_skills)
+values('C++', 'Senior');
+insert into skills(industry, level_skills)
+values('C#', 'Junior');
+insert into skills(industry, level_skills)
+values('C#', 'Middle');
+insert into skills(industry, level_skills)
+values('C#', 'Senior');
+insert into skills(industry, level_skills)
+values('JS', 'Junior');
+insert into skills(industry, level_skills)
+values('JS', 'Middle');
+insert into skills(industry, level_skills)
+values('JS', 'Senior');
 --======================================================================================================--
 insert into developer_skill(developer_id, skill_id)
 values(2, 3);
 insert into developer_skill(developer_id, skill_id)
-values(3, 5);
+values(1, 5);
 insert into developer_skill(developer_id, skill_id)
 values(5, 7);
 insert into developer_skill(developer_id, skill_id)
-values(4, 2);
-insert into developer_skill(developer_id, skill_id)
-values(9, 2);
-insert into developer_skill(developer_id, skill_id)
-values(10, 1);
+values(4, 12);
 -----------------------------------------------------------------------------------------------
 insert into developer_project(developer_id, project_id)
 values(1, 3);
